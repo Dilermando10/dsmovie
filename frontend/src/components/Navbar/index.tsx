@@ -1,21 +1,21 @@
-
-import './styles.css';
+import { ReactComponent as GithubIcon } from 'assets/img/github.svg';
+import './styles.css'
 function Navbar() {
-
     return (
         <header>
             <nav className="container">
-                <div>
-                    <div className="dsmovie-nav-content">
-                        <h1>DSMovie</h1>
-                        <a href="https://github.com/Dilermando10 target="_blank" rel="noreferrer"></a>
+                <div className="dsmovie-nav-content">
+                    <h1>DSMovie</h1>
+                    <a href="https://github.com/Dilermando10">
                         <div className="dsmovie-contact-container">
-                        <p className="dsmovie-contact-link"> /devsuperior</p>
+                            <GithubIcon />
+                            <p className="dsmovie-contact-link">/liperossell</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </nav>
-        </header>);
-
+        </header>
+    );
 }
+
 export default Navbar;
